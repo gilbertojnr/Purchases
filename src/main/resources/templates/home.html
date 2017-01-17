@@ -1,0 +1,41 @@
+<html>
+<body>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+
+
+
+</head>
+
+<br/><br/>
+
+<br/><br/>
+
+<a href="/">All</a>
+<a href="/?category=Furniture">Furniture</a>
+<a href="/?category=Alcohol">Alcohol</a>
+<a href="/?category=Toiletries">Toiletries</a>
+<a href="/?category=Shoes">Food</a>
+<a href="/?category=Jewelry">Jewelry</a>
+
+<br/><br/>
+
+
+<table class="table table-stripped">
+
+    <tr> <th align="left">Name</th> <th align="left">Email</th> <th align="left">Category</th> <th align="left">Creditcard</th> <th align="left">CVV</th> <th align="left">Date</th></tr>
+    {{#users}}
+    <tr> <td>{{customer.name}}</td><td>{{customer.email}}</td><td>{{category}} </td><td>{{creditCard}} </td><td>{{cvv}}</td><td>{{date}}</td> </tr>
+    {{/users}}
+
+</table>
+</body>
+</html>
